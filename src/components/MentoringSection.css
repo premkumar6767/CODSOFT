@@ -1,0 +1,36 @@
+.mentoring {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 60px 20px;
+    text-align: center;
+    padding:50px;
+  }
+  
+  .mentoring h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2A566F;
+    margin-bottom: 20px;
+  }
+  
+  .mentoring p {
+    font-size: 18px;
+    color: #2A566F;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .mentoring img{
+    width:250px;
+    height: 250px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin:0 auto;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.3);
+  }
+  .item{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+  }

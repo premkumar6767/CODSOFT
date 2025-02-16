@@ -1,0 +1,133 @@
+.hero {
+  width: 100%;
+  min-height: 500px;
+  background-color: #C6DBE0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  width: 50%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #2A566F;
+  position: relative;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.hero-buttons button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.hero-buttons .join-btn {
+  background-color: #28586F;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.hero-buttons .about-btn {
+  background-color: #F2FBFA;
+  color: #2A566F;
+  cursor: pointer;
+}
+
+.hero-buttons .join-btn:hover {
+  background-color: white;
+  color: #28586F;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-buttons .about-btn:hover {
+  background-color: #28586F;
+  color: white;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Make Image Circular */
+.hero-image img {
+  width: 250px; /* Adjust as needed */
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.hero-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Graduation Cap on 'S' */
+.alumnus-text {
+  position: relative;
+  display: inline-block;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .hero {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px;
+  }
+
+  .hero-content {
+      width: 100%;
+      max-width: 100%;
+  }
+
+  .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+  }
+
+  .hero-image img {
+      width: 200px;
+      height: 200px;
+      margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-content h1 {
+      font-size: 28px;
+  }
+
+  .hero-content p {
+      font-size: 16px;
+  }
+
+  .hero-buttons button {
+      font-size: 16px;
+      padding: 8px 16px;
+  }
+
+  .hero-image img {
+      width: 180px;
+      height: 180px;
+  }
+}
