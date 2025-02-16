@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="main-div">
+        <div id="title-card"><h1 id="name">PREM'S CALCULATOR</h1></div>
+        <div class="calculator">
+            <h1>calculator</h1>
+            <input type="text" id="display" />
+            <div class="buttons">
+                <button class="btn" onclick="clearDisplay()"><strong>C</strong></button>
+                <div class="button-wrap">
+                    <button class="btn" onclick="display(7)"><strong>7</strong></button>
+                    <button class="btn" onclick="display(8)"><strong>8</strong></button>
+                    <button class="btn" onclick="display(9)"><strong>9</strong></button>
+                    <button class="btn" onclick="display('/')"><strong>/</strong></button>
+                </div>
+                <div class="button-wrap">
+                    <button class="btn" onclick="display(4)"><strong>4</strong></button>
+                    <button class="btn" onclick="display(5)"><strong>5</strong></button>
+                    <button class="btn" onclick="display(6)"><strong>6</strong></button>
+                    <button class="btn" onclick="display('*')"><strong>*</strong></button>
+                </div>
+                <div class="button-wrap">
+                    <button class="btn" onclick="display(1)"><strong>1</strong></button>
+                    <button class="btn" onclick="display(2)"><strong>2</strong></button>
+                    <button class="btn" onclick="display(3)"><strong>3</strong></button>
+                    <button class="btn" onclick="display('-')"><strong>-</strong></button>
+                </div>
+                <div class="button-wrap">
+                    <button class="btn" onclick="display('+')"><strong>+</strong></button>
+                    <button class="btn" onclick="display(0)"><strong>0</strong></button>
+                    <button class="btn" onclick="display('.')"><strong>.</strong></button>
+                    <button class="btn" onclick="calculate()"><strong>=</strong></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script src="/script.js"></script>
+
+</html>
